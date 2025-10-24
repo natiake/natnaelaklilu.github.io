@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+    index.html
+    Separate-files version of the single-file portfolio.
+    EDIT: Replace placeholders (headshot, resume link, GitHub/LinkedIn URLs, project links).
+  -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Natnael Aklilu — Aspiring AI & NLP Developer</title>
+  <meta name="description" content="Natnael Aklilu, Grade 12 student from Wolaita Sodo, Ethiopia. Aspiring Computer Science student focused on Python, AI/ML and NLP." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <!-- HEADER (START) -->
+    <header class="site-header">
+      <div class="brand" aria-label="Brand">
+        <div class="logo" aria-hidden="true">
+          <!-- Replace with your own SVG/logo if desired -->
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <rect x="3" y="3" width="18" height="18" rx="5" fill="url(#g)"></rect>
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#00f18a"/>
+                <stop offset="1" stop-color="#00b3ff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <h1>Natnael Aklilu</h1>
+          <div class="location">Wolaita Sodo, Ethiopia • Grade 12</div>
+        </div>
+      </div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a class="nav-link" href="#about">About</a>
+        <a class="nav-link" href="#skills">Skills</a>
+        <a class="nav-link" href="#projects">Projects</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="controls">
+        <button id="themeToggle" class="btn" aria-pressed="false" title="Toggle theme">Theme</button>
+      </div>
+    </header>
+    <!-- HEADER (END) -->
+
+    <!-- HERO (START) -->
+    <main>
+      <section id="hero" class="hero">
+        <div class="hero-left card">
+          <h2 class="hero-title">Hi, I'm Natnael — <span id="typewriter" class="accent">aspiring AI & NLP developer</span></h2>
+          <p class="lead">
+            Grade 12 student from Wolaita Sodo. I build Python projects, explore NLP ideas, and prepare for Computer Science university admission.
+            I enjoy learning algorithms, experimenting with ML concepts and creating tools that make data useful.
+          </p>
+
+          <div class="hero-actions">
+            <a id="resumeLink" class="btn primary" href="#" aria-label="View resume (placeholder)">View CV / Resume</a>
+            <a class="btn ghost" href="#projects">View Projects</a>
+            <a class="btn ghost" href="mailto:natnaelaklilu617@gmail.com">Email</a>
+          </div>
+
+          <p class="muted small-note">EDIT: Replace the resume link and project placeholders with your real files and repos.</p>
+        </div>
+
+        <aside class="hero-right card headshot" aria-labelledby="headshot-label">
+          <!-- EDIT: Replace this with your photo like: <img src="path/to/photo.jpg" alt="Natnael Aklilu"> -->
+          <div class="photo" role="img" aria-label="[Insert headshot here]">
+            <span>[Headshot Placeholder]</span>
+          </div>
+          <div class="headshot-info">
+            <strong>Natnael Aklilu</strong>
+            <div class="muted">Wolaita Sodo, Ethiopia</div>
+            <div class="accent-strip" aria-hidden="true">
+              <span class="g"></span><span class="y"></span><span class="r"></span>
+            </div>
+          </div>
+        </aside>
+      </section>
+      <!-- HERO (END) -->
+
+      <!-- ABOUT (START) -->
+      <section id="about" class="card section">
+        <h3>About Me</h3>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I am a Grade 12 student from Wolaita Sodo, Ethiopia preparing for university entrance in Computer Science.
+              My focus is learning Python and applying it to Artificial Intelligence and Natural Language Processing tasks.
+              I build small projects to practice data cleaning, feature extraction, and simple ML pipelines.
+            </p>
+
+            <p>
+              Recently I worked on text-processing experiments, basic sentiment analysis scripts, and web-scraping utilities to gather datasets.
+              These projects strengthen my skills in algorithms, data structures, and problem solving — areas I want to deepen through university study.
+            </p>
+
+            <p>
+              Outside coding, I enjoy quiet walks, exploring new places, and reading tutorials and papers to broaden my knowledge in AI and NLP.
+            </p>
+          </div>
+
+          <aside class="about-side">
+            <div class="quick-facts">
+              <strong>Quick facts</strong>
+              <ul>
+                <li>Location: Wolaita Sodo, Ethiopia</li>
+                <li>Goal: Computer Science degree; focus on AI & NLP</li>
+                <li>Tools: Python, BeautifulSoup, pandas</li>
+                <li>Contact: <a href="mailto:natnaelaklilu617@gmail.com">natnaelaklilu617@gmail.com</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
+      <!-- ABOUT (END) -->
+
+      <!-- SKILLS (START) -->
+      <section id="skills" class="card section">
+        <h3>Skills & Tech Stack</h3>
+        <p class="muted">Core focus on Python, AI/ML concepts and NLP; solid fundamentals in web technologies and version control.</p>
+
+        <div class="skills-grid" role="list">
+          <div class="skill" role="listitem">
+            <div class="icon" aria-hidden="true">🐍</div>
+            <div>
+              <strong>Python</strong>
+              <div class="muted">Scripting, data processing, ML experiments</div>
+            </div>
+          </div>
+
+          <div class="skill" role="listitem">
+            <div class="icon" aria-hidden="true">🤖</div>
+            <div>
+              <strong>AI / ML</strong>
+              <div class="muted">Concepts, basics of TF/PyTorch (placeholder)</div>
+            </div>
+          </div>
+
+          <div class="skill" role="listitem">
+            <div class="icon" aria-hidden="true">🧠</div>
+            <div>
+              <strong>NLP</strong>
+              <div class="muted">Tokenization, rule-based prototypes, sentiment analysis</div>
+            </div>
+          </div>
+
+          <div class="skill" role="listitem">
+            <div class="icon" aria-hidden="true">🌐</div>
+            <div>
+              <strong>HTML / CSS / JS</strong>
+              <div class="muted">Semantic markup, responsive layout, vanilla JS</div>
+            </div>
+          </div>
+
+          <div class="skill" role="listitem">
+            <div class="icon" aria-hidden="true">🕸️</div>
+            <div>
+              <strong>Web Scraping</strong>
+              <div class="muted">Requests, BeautifulSoup — data collection</div>
+            </div>
+          </div>
+
+          <div class="skill" role="listitem">
+            <div class="icon" aria-hidden="true">🔧</div>
+            <div>
+              <strong>Git / GitHub</strong>
+              <div class="muted">Version control and deployment basics</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- SKILLS (END) -->
+
+      <!-- PROJECTS (START) -->
+      <section id="projects" class="card section">
+        <h3>Projects</h3>
+        <p class="muted">Replace placeholders with real repositories and demos. Highlight the problem, your approach, and the tech used.</p>
+
+        <div class="projects-grid" role="list">
+          <article class="project" role="listitem">
+            <h4>Python NLP Project <span class="muted small">[Placeholder]</span></h4>
+            <p class="muted">A Python script demonstrating text processing and basic sentiment analysis: tokenization, feature extraction, and model placeholder.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">NLP</span></div>
+            <div class="project-actions">
+              <a class="btn" href="#" aria-label="View source on GitHub (placeholder)">View Source on GitHub</a>
+              <a class="btn ghost" href="#" aria-label="Live demo (placeholder)">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project" role="listitem">
+            <h4>Web Scraping Tool <span class="muted small">[Placeholder]</span></h4>
+            <p class="muted">A scraper using Requests + BeautifulSoup to gather structured data for analysis and CSV export — useful for research datasets.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">BeautifulSoup</span></div>
+            <div class="project-actions">
+              <a class="btn" href="#" aria-label="View source on GitHub (placeholder)">View Source on GitHub</a>
+              <a class="btn ghost" href="#" aria-label="Live demo (placeholder)">Live Demo</a>
+            </div>
+          </article>
+
+          <article class="project" role="listitem">
+            <h4>Portfolio Website (This site)</h4>
+            <p class="muted">This portfolio is built with hand-written HTML, CSS and Vanilla JavaScript. It includes a typewriter effect and scroll reveal animations.</p>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">JavaScript</span></div>
+            <div class="project-actions">
+              <a class="btn" href="#" aria-label="View source on GitHub (placeholder)">View Source on GitHub</a>
+              <a class="btn ghost" href="#" aria-label="Live demo (placeholder)">Live Demo</a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- PROJECTS (END) -->
+
+      <!-- CONTACT (START) -->
+      <section id="contact" class="card section">
+        <h3>Contact</h3>
+        <p class="muted">I'd love to connect — for university advice, collaborations, or internships. Use the links below or email me directly.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <strong>Email</strong><br />
+            <a href="mailto:natnaelaklilu617@gmail.com">natnaelaklilu617@gmail.com</a>
+            <div class="spacer"></div>
+
+            <strong>Instagram</strong><br />
+            <a href="https://instagram.com/nattify_x" target="_blank" rel="noopener">instagram.com/nattify_x</a>
+            <div class="spacer"></div>
+
+            <strong>Telegram</strong><br />
+            <a href="https://t.me/nattify_x" target="_blank" rel="noopener">t.me/nattify_x</a>
+            <div class="spacer"></div>
+
+            <strong>GitHub</strong><br />
+            <a href="#" aria-label="GitHub profile placeholder">github.com/your-username</a>
+            <div class="spacer"></div>
+
+            <strong>LinkedIn</strong><br />
+            <a href="#" aria-label="LinkedIn profile placeholder">linkedin.com/in/your-profile</a>
+          </div>
+
+          <div class="contact-form">
+            <!-- Client-side only contact form -->
+            <form id="contactForm" novalidate>
+              <label class="sr-only" for="name">Your name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required>
+
+              <label class="sr-only" for="email">Your email</label>
+              <input id="email" name="email" type="email" placeholder="Your email" required>
+
+              <label class="sr-only" for="message">Message</label>
+              <textarea id="message" name="message" placeholder="Short message" required></textarea>
+
+              <div class="form-actions">
+                <button id="sendBtn" class="btn" type="submit">Send</button>
+                <button id="resetBtn" class="btn ghost" type="reset">Reset</button>
+              </div>
+
+              <div id="formFeedback" class="muted" role="status" aria-live="polite"></div>
+              <p class="muted small">Note: This form is client-side only. Use the email link above to send a direct message until a backend is configured.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <!-- CONTACT (END) -->
+
+      <!-- FOOTER (START) -->
+      <footer class="site-footer">
+        <div>© <span id="year"></span> Natnael Aklilu — Wolaita Sodo, Ethiopia</div>
+        <div class="footer-links">
+          <a href="#" aria-label="GitHub placeholder">GitHub</a>
+          <a href="#" aria-label="LinkedIn placeholder">LinkedIn</a>
+          <a href="https://instagram.com/nattify_x" target="_blank" rel="noopener">Instagram</a>
+        </div>
+      </footer>
+      <!-- FOOTER (END) -->
+    </main>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
